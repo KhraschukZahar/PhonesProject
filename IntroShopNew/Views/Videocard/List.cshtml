@@ -1,0 +1,14 @@
+﻿
+        @{ foreach (var item in Model.allVideocards)
+            {
+                <div class="fff">
+                    <img class="phones-image" src="@item.img" alt="@item.name" />
+                   <div class ="block-info">
+                    <h2>Vendor:@item.name</h2>
+                    <p>Price:@item.price UAH</p>
+                    <p>Description:@item.description</p>
+                   </div>
+                </div>
+            }
+        }
+

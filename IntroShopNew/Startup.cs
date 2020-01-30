@@ -19,6 +19,10 @@ namespace IntroShopNew
         {
             services.AddTransient<IAllPhones, MockPhones>();
             services.AddTransient<IPhoneCategory, MockCategory>();
+
+            services.AddTransient<IAllVideocards, MockVideocards>();
+            services.AddTransient<IVideoCardCategory, MockVideocardCategory>();
+
             services.AddMvc();
         }
 

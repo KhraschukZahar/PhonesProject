@@ -45,13 +45,16 @@ header {
     .sb-underline:hover {
         transform: scale(2);
     }
+
 .fff {
     z-index: 0;
     text-align: justify;
     border: 2px solid black;
     padding: 10px;
     margin: 10px;
-    width: 350px;
     height: auto;
     overflow: hidden;
+}
+.block-info{
+    display:inline-block;
 }

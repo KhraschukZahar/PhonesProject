@@ -24,3 +24,4 @@ C:\Users\Kirito\Desktop\ASP CORE\IntroShopNew\IntroShopNew\obj\Debug\netcoreapp2
 C:\Users\Kirito\Desktop\ASP CORE\IntroShopNew\IntroShopNew\obj\Debug\netcoreapp2.2\IntroShopNew.RazorTargetAssemblyInfo.cs
 C:\Users\Kirito\Desktop\ASP CORE\IntroShopNew\IntroShopNew\obj\Debug\netcoreapp2.2\IntroShopNew.Views.pdb
 C:\Users\Kirito\Desktop\ASP CORE\IntroShopNew\IntroShopNew\obj\Debug\netcoreapp2.2\IntroShopNew.csproj.CopyComplete
+C:\Users\Kirito\Desktop\ASP CORE\IntroShopNew\IntroShopNew\obj\Debug\netcoreapp2.2\Razor\Views\Videocard\List.g.cshtml.cs
