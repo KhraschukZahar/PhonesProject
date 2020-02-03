@@ -11,11 +11,11 @@ namespace IntroShopNew.Controllers
     public class VideocardController : Controller
     {
         private readonly IAllVideocards _allVideocards;
-        private readonly IVideoCardCategory _allVideoCardsCategories;
-        public VideocardController(IAllVideocards IAllVideocards, IVideoCardCategory IVideoCardCategory)
+        private readonly IVideocardCategory _allVideocardsCategories;
+        public VideocardController(IAllVideocards IAllVideocards, IVideocardCategory IVideocardCategory)
         {
             _allVideocards = IAllVideocards;
-            _allVideoCardsCategories = IVideoCardCategory;
+            _allVideocardsCategories = IVideocardCategory;
         }
 
         public ViewResult List()
@@ -26,6 +26,9 @@ namespace IntroShopNew.Controllers
             obj.currentCategory = "Best category";
 
             return View(obj);
+
+
+
         }
     }
 }

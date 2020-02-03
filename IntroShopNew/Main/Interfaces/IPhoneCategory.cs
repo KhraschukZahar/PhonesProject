@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntroShopNew.Main.Interfaces
 {
-    public interface IPhoneCategory
+    public interface IVideocardCategory
     {
         IEnumerable<Category> AllCategories { get; }
     }

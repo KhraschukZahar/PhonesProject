@@ -53,3 +53,4 @@ C:\Users\dell\Desktop\ASP.NET.CORE\PhonesProject\IntroShopNew\obj\Debug\netcorea
 C:\Users\dell\Desktop\ASP.NET.CORE\PhonesProject\IntroShopNew\obj\Debug\netcoreapp2.2\IntroShopNew.pdb
 C:\Users\dell\Desktop\ASP.NET.CORE\PhonesProject\IntroShopNew\obj\Debug\netcoreapp2.2\IntroShopNew.csproj.CopyComplete
 C:\Users\dell\Desktop\ASP.NET.CORE\PhonesProject\IntroShopNew\obj\Debug\netcoreapp2.2\Razor\Views\Processor\List.g.cshtml.cs
+C:\Users\Kirito\Desktop\ASP CORE\IntroShopNew\IntroShopNew\obj\Debug\netcoreapp2.2\Razor\Views\Processor\List.g.cshtml.cs

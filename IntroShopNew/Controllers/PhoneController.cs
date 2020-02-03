@@ -11,8 +11,8 @@ namespace IntroShopNew.Controllers
     public class PhoneController : Controller
     {
         private readonly IAllPhones _allPhones;
-        private readonly IPhoneCategory _allCategories;
-        public PhoneController(IAllPhones iAllPhones,IPhoneCategory IPhoneCategory)
+        private readonly IVideocardCategory _allCategories;
+        public PhoneController(IAllPhones iAllPhones,IVideocardCategory IPhoneCategory)
         {
             _allPhones = iAllPhones;
             _allCategories = IPhoneCategory;

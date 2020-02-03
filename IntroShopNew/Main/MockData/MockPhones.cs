@@ -9,7 +9,7 @@ namespace IntroShopNew.Main.MockData
 {
     public class MockPhones : IAllPhones
     {
-        private readonly IPhoneCategory _categoryPhone = new MockCategory();
+        private readonly IVideocardCategory _categoryPhone = new MockCategory();
         public IEnumerable<Phone> Phones
         {
             get

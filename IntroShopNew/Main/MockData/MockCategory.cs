@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IntroShopNew.Main.MockData
 {
-    public class MockCategory : IPhoneCategory
+    public class MockCategory : IVideocardCategory
     {
         public IEnumerable<Category> AllCategories
         {
