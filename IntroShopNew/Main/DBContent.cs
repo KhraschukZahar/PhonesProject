@@ -15,5 +15,10 @@ namespace IntroShopNew.Main
         }
         public DbSet<Phone> Phone { get; set; }
         public DbSet<Category> Category { get; set; }
+
+        public DbSet<Motherboard> Motherboard { get; set; }
+        public DbSet<CategoryMotherboard> CategoryMotherboarddd { get; set; }
+
+
     }
 }

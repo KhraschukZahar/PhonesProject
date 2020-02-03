@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IntroShopNew.Main.Repository
 {
-    public class CategoryRepository : IVideocardCategory
+    public class CategoryRepository : IPhoneCategory
     {
         private readonly DBContent dbContent;   
         public CategoryRepository(DBContent dbContent)

@@ -11,11 +11,11 @@ namespace IntroShopNew.Controllers
     public class VideocardController : Controller
     {
         private readonly IAllVideocards _allVideocards;
-        private readonly IVideocardCategory _allVideocardsCategories;
-        public VideocardController(IAllVideocards IAllVideocards, IVideocardCategory IVideocardCategory)
+        private readonly IVideoCardCategory _allVideocardsCategories;
+        public VideocardController(IAllVideocards IAllVideocards, IVideoCardCategory IVideoCardCategory)
         {
             _allVideocards = IAllVideocards;
-            _allVideocardsCategories = IVideocardCategory;
+            _allVideocardsCategories = IVideoCardCategory;
         }
 
         public ViewResult List()

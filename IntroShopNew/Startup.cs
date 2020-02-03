@@ -29,10 +29,13 @@ namespace IntroShopNew
             services.AddDbContext<DBContent>(options => options.UseSqlServer(_dbConf.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IAllPhones, PhoneRepository>();
-            services.AddTransient<IVideocardCategory, CategoryRepository>();
+            services.AddTransient<IPhoneCategory, CategoryRepository>();
 
             services.AddTransient<IAllVideocards, MockVideocards>();
             services.AddTransient<IVideoCardCategory, MockVideocardCategory>();
+
+            services.AddTransient<IAllProcessors, MockProcessors>();
+            services.AddTransient<IProcessorCategory, MockProcessorCategory>();
 
             services.AddTransient<IAllProcessors, MockProcessors>();
             services.AddTransient<IProcessorCategory, MockProcessorCategory>();
