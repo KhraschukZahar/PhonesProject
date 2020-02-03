@@ -1,0 +1,16 @@
+﻿
+<div class="row">
+    <div class="col-md-12">
+        @{ foreach (var item in Model.allProcessors)
+            {
+                <div class="fff">
+                    <img class="phones-image" src="@item.img" alt="@item.name" />
+                    <div>Vendor:@item.name</div>
+                    <div>Price:@item.price UAH</div>
+                    <div>Description:@item.description</div>
+                </div>
+            }
+        }
+    </div>
+</div>
+

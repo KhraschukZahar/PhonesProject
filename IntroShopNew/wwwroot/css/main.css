@@ -1,60 +1,151 @@
-﻿body {
-    background-color : azure;
-}
-.phones-image {
-    width: 100%;
-    height: auto;
-}
-header {
-    height: 60px;
-    background: #9cd4df;
-    padding-left: 750px;
-}
-
-.sb-underline {
-    width: 10px;
-    height: 10px;
-    position: relative;
+﻿* {
+    margin-left: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
+    list-style-type: none;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    color: white;
-    font-size: 20px;
-    margin: 10px;
 }
-
-    .sb-underline:before {
-        content: "";
-        height: 2px;
-        left: 0;
-        position: absolute;
-        top: 100%;
-        width: 0;
-        -ms-transform: translateX(-100%);
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 1;
-    }
-
-    .sb-underline:hover::before {
-        width: 100%;
-        background: white;
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    .sb-underline:hover {
-        transform: scale(2);
-    }
-
-.fff {
-    z-index: 0;
-    text-align: justify;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 10px;
-    height: auto;
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
     overflow: hidden;
+    visibility: hidden;
 }
-.block-info{
-    display:inline-block;
+
+/* Container do menu */
+.main-navigation {  
+    background: #3EBDFF;
 }
+
+    .main-navigation a {
+        margin-left: 160px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .main-navigation a:hover {
+            background: #4f9ee3;
+        }
+
+    /* Container dos links do menu - Espaço de 30px para acompanhar o layout */
+    .main-navigation ul {
+        list-style-type: none;
+    }
+
+    /* Mantém os sub-menus nas posições corretas */
+    .main-navigation li {
+        position: relative;
+    }
+
+    .main-navigation > ul > li {
+        float: left;
+    }
+
+    .main-navigation ul li a {
+        display: block;
+        padding: 20px 25px;
+    }
+
+/* Mantém os sub-menus mais abaixo nas posições corretas */
+.menu-item-has-children {
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+    .menu-item-has-children .sub-menu {
+        position: absolute;
+        background: transparent;
+        min-width: 150px;
+        display: none;
+        z-index: 9999;
+        transition: all .2s ease-in-out;
+    }
+
+.main-navigation > ul > li > .sub-menu {
+    padding-top: 10px;
+}
+
+    .main-navigation > ul > li > .sub-menu:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 20%;
+        border: 5px solid transparent;
+        border-bottom-color: #3EBDFF;
+    }
+
+.menu-item-has-children .sub-menu li {
+    border-bottom: 1px solid transparent;
+}
+
+    .menu-item-has-children .sub-menu li:last-child {
+        border-bottom: none;
+    }
+
+.menu-item-has-children .sub-menu a {
+    display: block;
+    color: #fff;
+    background: #3EBDFF;
+}
+
+/* Sub-menus dentro de sub-menus sempre aparecem ao lado direito */
+.sub-menu .sub-menu {
+    position: absolute;
+    min-width: 150px;
+    left: 100%;
+    top: -0;
+    border-left: 1px solid transparent;
+}
+
+/* Não precisamos de javascript para mostra os sub-menus */
+.menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+
+    .menu-item-has-children:hover > .sub-menu a:hover {
+        background: #4f9ee3;
+    }
+
+/* Menu responsivo */
+#responsive-nav-button,
+.responsive-nav {
+  
+    display: none;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    float: left;
+    clear: both;
+    color: #fff;
+}
+
+#responsive-nav-button {
+    padding: 10px 20px;
+}
+
+.responsive-nav {
+
+    background: #333;
+    padding: 10px 0;
+}
+
+    .responsive-nav a {
+        width: 100%;
+        display: inline-block;
+        padding: 5px 0 7px 20px;
+    }
+
+    .responsive-nav li a {
+        color: #ddd;
+        font-size: 12px;
+    }

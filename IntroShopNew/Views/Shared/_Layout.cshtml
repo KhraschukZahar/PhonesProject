@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿    <!DOCTYPE html>
 
 <html>
 <head>
@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="~/css/main.css" />
 </head>
 <header>
-    
-    <nav>
-        <a class="sb-underline" href="#">Home</a>
-        <a class="sb-underline" href="#">Phones</a>
-        <a class="sb-underline" href="#">Laptops</a>
+    <nav class="main-navigation clearfix">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="menu-item-has-children">
+                <a href="#">Categories</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">Videocards</a></li>
+                    <li><a href="#">Processors</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
     </nav>
+    <a href="#" class="small-menu-button" id="responsive-nav-button">Menu</a>
+    <div class="responsive-nav clearfix"></div>
 </header>
 <body>
     <div class="container">

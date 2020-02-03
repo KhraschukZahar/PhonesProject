@@ -23,6 +23,9 @@ namespace IntroShopNew
             services.AddTransient<IAllVideocards, MockVideocards>();
             services.AddTransient<IVideoCardCategory, MockVideocardCategory>();
 
+            services.AddTransient<IAllProcessors, MockProcessors>();
+            services.AddTransient<IProcessorCategory, MockProcessorCategory>();
+
             services.AddMvc();
         }
 
