@@ -40,6 +40,9 @@ namespace IntroShopNew
             services.AddTransient<IAllProcessors, MockProcessors>();
             services.AddTransient<IProcessorCategory, MockProcessorCategory>();
 
+            services.AddTransient<IAllMotherboards, MotherboardRepository>();
+            services.AddTransient<IMotherboardCategory, CategoryMotherboardRepository>();
+
             services.AddMvc();
         }
 

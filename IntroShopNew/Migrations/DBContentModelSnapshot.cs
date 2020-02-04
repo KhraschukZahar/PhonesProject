@@ -34,6 +34,44 @@ namespace IntroShopNew.Migrations
                     b.ToTable("Category");
                 });
 
+            modelBuilder.Entity("IntroShopNew.Main.Models.CategoryMotherboard", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("categoryDescription");
+
+                    b.Property<string>("categoryName");
+
+                    b.HasKey("id");
+
+                    b.ToTable("CategoryMotherboarddd");
+                });
+
+            modelBuilder.Entity("IntroShopNew.Main.Models.Motherboard", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("CategoryMotherboardid");
+
+                    b.Property<string>("description");
+
+                    b.Property<string>("img");
+
+                    b.Property<string>("name");
+
+                    b.Property<long>("price");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("CategoryMotherboardid");
+
+                    b.ToTable("Motherboard");
+                });
+
             modelBuilder.Entity("IntroShopNew.Main.Models.Phone", b =>
                 {
                     b.Property<int>("id")
@@ -55,6 +93,13 @@ namespace IntroShopNew.Migrations
                     b.HasIndex("Categoryid");
 
                     b.ToTable("Phone");
+                });
+
+            modelBuilder.Entity("IntroShopNew.Main.Models.Motherboard", b =>
+                {
+                    b.HasOne("IntroShopNew.Main.Models.CategoryMotherboard", "CategoryMotherboard")
+                        .WithMany("motherboards")
+                        .HasForeignKey("CategoryMotherboardid");
                 });
 
             modelBuilder.Entity("IntroShopNew.Main.Models.Phone", b =>
